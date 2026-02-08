@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will you be my Valentine? 💝</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================
+     FLOATING HEARTS BACKGROUND
+     ============================================ -->
+<div class="floating-hearts" id="floatingHearts"></div>
+
+<!-- ============================================
+     MAIN QUESTION SCREEN
+     ============================================ -->
+<div id="question-screen">
+  <h1 class="title">Will you be my Valentine? 💝</h1>
+
+  <div class="photo-container" id="photo"><img src="Profile.png" alt="Profile"></div>
+
+  <div class="speech-bubble-wrapper">
+    <div class="speech-bubble">
+      <span class="message" id="bubbleMessage">Please? 🥺</span>
+    </div>
+  </div>
+
+  <div class="buttons-area">
+    <button class="btn-no" id="btnNo">No</button>
+  </div>
+</div>
+
+<!-- Yes button (positioned independently so it can move freely) -->
+<button class="btn-yes" id="btnYes"><span>Yes</span></button>
+
+<!-- ============================================
+     SUCCESS / CELEBRATION SCREEN
+     ============================================ -->
+<div id="success-screen">
+  <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+    <div class="orbit-hearts">
+      <span>💖</span><span>💗</span><span>💕</span><span>💘</span>
+    </div>
+    <div class="success-photo"><img src="Profile.png" alt="Profile"></div>
+  </div>
+  <div class="success-message">I knew you'd say yes! 💕</div>
+  <div class="success-sub">Happy Valentine's Day! 🥰</div>
+</div>
+
+<!-- Confetti container (populated by JS on success) -->
+<div class="confetti-container" id="confettiContainer"></div>
+
+<!-- Celebration GIFs (populated by JS on success) -->
+<div class="gif-container" id="gifContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
